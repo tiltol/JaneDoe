@@ -27,6 +27,7 @@ body {
   overflow: hidden;
   position: relative;
   cursor: context-menu;
+  opacity: 0.2
 
 }
 
