@@ -34,8 +34,8 @@ body {
 
 #inneriframe {
   position: absolute;
-  top: -642px;
-  left: -520px;
+  top: -100vh;
+  left: -50vw;
   width: 500px;
   height: 1200px;
   cursor: context-menu;
