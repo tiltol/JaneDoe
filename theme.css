@@ -25,7 +25,6 @@ body {
 #outerdiv {
   width: 150px;
   height: 35px;
-  overflow: hidden;
   position: relative;
   cursor: context-menu;
   opacity: 0.5
