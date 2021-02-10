@@ -3,7 +3,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 1280px;
+  width: 820px
   cursor: context-menu;
 }
 
