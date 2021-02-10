@@ -1,0 +1,40 @@
+body {
+  background-color: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  cursor: context-menu;
+}
+
+
+#coverup {
+  background-color: #eee;
+  font-size: 5rem;
+  font-family: Courier;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  cursor: context-menu;
+
+}
+
+#outerdiv {
+  width: 150px;
+  height: 35px;
+  overflow: hidden;
+  position: relative;
+  cursor: context-menu;
+
+}
+
+#inneriframe {
+  position: absolute;
+  top: -642px;
+  left: -520px;
+  width: 1280px;
+  height: 1200px;
+  cursor: context-menu;
+
+}
