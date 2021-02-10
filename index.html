@@ -1,6 +1,52 @@
 <html>
 <head>
-  <link rel="stylesheet" href="theme.css">
+  <style>
+  
+  body {
+  background-color: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  width: 95vw;
+  cursor: context-menu;
+}
+
+
+#coverup {
+  background-color: #eee;
+  font-size: 5rem;
+  font-family: Courier;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  cursor: context-menu;
+  
+
+}
+
+#outerdiv {
+  width: 150px;
+  height: 35px;
+  position: relative;
+  cursor: context-menu;
+  opacity: 0.5
+
+}
+
+#inneriframe {
+  position: absolute;
+  top: -100vh;
+  left: -50vw;
+  width: 500px;
+  height: 1200px;
+  cursor: context-menu;
+
+}
+
+  
+  </style>
   <script>
 
     function moveBlock(event) {
