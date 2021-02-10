@@ -1,10 +1,12 @@
 <html>
 <head>
   <link rel="stylesheet" href="theme.css">
-  <script>function moveBlock(event) {
+  <script>
+
+    function moveBlock(event) {
   var block = document.getElementById('outerdiv');
-  block.style.left = event.clientX - 2000 +'px';
-  block.style.top = event.clientY + 50 + 'px';
+  block.style.left = event.clientX +'px';
+  block.style.top = event.clientY + 'px';
 }
 
 document.addEventListener('mousemove', moveBlock);</script>
