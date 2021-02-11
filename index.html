@@ -69,6 +69,13 @@ var listener = addEventListener('blur', function() {
 	}
     
 });
+
+document.addEventListener("touchstart", function() {
+ var block = document.getElementById('outerdiv');
+  block.style.left = event.clientX -50 +'px';
+  block.style.top = event.clientY -15 + 'px';
+}, true);
+
   
   </script>
 
