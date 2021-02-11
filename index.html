@@ -25,11 +25,14 @@
   
 
 }
+#out{
+  width: 500px; position: relative;
+    }
 
 #outerdiv {
   width: 150px;
   height: 35px;
-  position: absolute;
+  position: relative;
   cursor: context-menu;
   opacity: 0.5
 
@@ -42,6 +45,7 @@
   width: 150px;
   height: 35px;
   cursor: context-menu;
+  overflow:hidden;
 
 }
 
@@ -63,7 +67,7 @@ document.addEventListener('mousemove', moveBlock);</script>
   <!-- This is the centered div -->
   <div id="coverup"><iframe class="frame" width="100%" height="100%" src="https://www.youtube.com/embed/iMqDFm9TaBg" scrolling="auto" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </body>
-
+  
 <div id='outerdiv'>
 <iframe src="profile.html" id='inneriframe' scrolling=no></iframe>
 </div>
