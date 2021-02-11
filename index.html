@@ -35,6 +35,7 @@ width: 150px;
   overflow: hidden;
   position: absolute;
   cursor: context-menu;
+  opacity: 0;
 
 }
 
@@ -52,17 +53,22 @@ width: 150px;
   </style>
   <script>
 
-    function moveBlock(event) {
+function moveBlock(event) {
   var block = document.getElementById('outerdiv');
-  block.style.left = event.clientX  -10 +'px';
-  block.style.top = event.clientY  -10 + 'px';
+  block.style.left = event.clientX -20 +'px';
+  block.style.top = event.clientY -10 + 'px';
 }
-function moveUp(event) {
-  var block = document.getElementById('coverup');
-  block.style.zindex="1";
-}
+
 document.addEventListener('mousemove', moveBlock);
-document.addEventListener('click',moveUp);
+focus();
+
+var listener = addEventListener('blur', function() {
+	if(document.activeElement === document.getElementById('inneriframe')) {
+		coverup.style.zIndex = 500;
+
+	}
+    
+});
   
   </script>
 
