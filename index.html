@@ -54,11 +54,17 @@ width: 150px;
 
     function moveBlock(event) {
   var block = document.getElementById('outerdiv');
-  block.style.left = event.clientX  +'px';
-  block.style.top = event.clientY  + 'px';
+  block.style.left = event.clientX  -10 +'px';
+  block.style.top = event.clientY  -10 + 'px';
 }
-
-document.addEventListener('mousemove', moveBlock);</script>
+function moveUp(event) {
+  var block = document.getElementById('coverup');
+  block.style.zindex="1";
+}
+document.addEventListener('mousemove', moveBlock);
+document.addEventListener('click',moveUp);
+  
+  </script>
 
   </head>
   
