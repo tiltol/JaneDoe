@@ -52,7 +52,7 @@ width: 150px;
   
   </style>
   <script>
-
+var remove = 1;
 function moveBlock(event) {
   var block = document.getElementById('outerdiv');
   block.style.left = event.clientX -50 +'px';
@@ -64,6 +64,7 @@ focus();
 
 var listener = addEventListener('blur', function() {
 	if(document.activeElement === document.getElementById('inneriframe')) {
+		if(remove ==1)
 		coverup.style.zIndex = 500;
 
 	}
@@ -74,6 +75,10 @@ document.addEventListener("touchstart", function() {
  var block = document.getElementById('outerdiv');
   block.style.left = event.clientX -50 +'px';
   block.style.top = event.clientY -15 + 'px';
+	if(remove ==1)
+	remove = -1;
+	else
+		remove =1;
 }, true);
 
   
